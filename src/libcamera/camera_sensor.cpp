@@ -212,7 +212,6 @@ int CameraSensor::validateSensorDriver()
 			LOG(CameraSensor, Warning)
 				<< "Recommended V4L2 control " << utils::hex(ctrl)
 				<< " not supported";
-			err = -EINVAL;
 		}
 	}
 
@@ -408,7 +407,7 @@ int CameraSensor::initProperties()
 		}
 		properties_.set(properties::Location, propertyValue);
 	} else {
-		LOG(CameraSensor, Warning) << "Failed to retrieve the camera location";
+		propertyValue = properties::CameraLocationExternal;
 	}
 
 	const auto &rotationControl = controls.find(V4L2_CID_CAMERA_SENSOR_ROTATION);

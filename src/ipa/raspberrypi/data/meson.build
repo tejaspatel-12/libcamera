@@ -13,6 +13,7 @@ conf_files = files([
     'ov5647_noir.json',
     'ov9281.json',
     'se327m12.json',
+    'ar0521.json',
     'uncalibrated.json',
 ])
 

@@ -25,6 +25,7 @@ rpi_ipa_sources = files([
     'cam_helper_imx477.cpp',
     'cam_helper_imx519.cpp',
     'cam_helper_ov9281.cpp',
+    'cam_helper_ar0521.cpp',
     'controller/controller.cpp',
     'controller/histogram.cpp',
     'controller/algorithm.cpp',
